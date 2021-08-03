@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+// Provider wraps our app so can have redux inside of it.
+import { Provider } from 'react-redux';
 
 // 1) Set up Redux
 
@@ -15,6 +17,7 @@ export default function App() {
     </View>
   );
 }
+// Above is the entire app (high level overview) so need to import a provider
 
 const styles = StyleSheet.create({
   container: {
