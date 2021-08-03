@@ -4,8 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    // view components instead of div tags for react which are HTML elemets for a page
+    // for apps on ios and andriod have to take different approach
+    // this view components are compiled at build time to a ios and andriod div
+    // style instead of className
+    <View style={styles.container}> 
+      <Text>Lets build uber</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -19,3 +23,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// expo start opens Metro Bundler, where View componets have been complied into ios and andriod
