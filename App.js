@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// 1) Set up Redux
+
 export default function App() {
   return (
     // view components instead of div tags for react which are HTML elemets for a page
@@ -10,7 +12,6 @@ export default function App() {
     // style instead of className
     <View style={styles.container}> 
       <Text>Lets build uber</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -18,6 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    // flex defaults to a column on react native becuase working on a phone
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
